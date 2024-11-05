@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.buffer-area {
+    padding: 20px;
+    text-align: center;
+    background-color: #5f5d5d; /* Neutral color for packaging theme */
+    color: #fff;
+}
+
+#products {
+    padding: 20px;
+    background-color: #e8f4f8; /* Light blue background for packaging theme */
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #007acc;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+#about {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.founder img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #e8f4f8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .buffer-area {
+        padding: 10px;
+    }
+
+    #products h2 {
+        font-size: 1.5em;
+    }
+
+    #contact, #about, footer {
+        padding: 15px;
+    }
+
+    .founder {
+        flex-direction: column;
+    }
+
+    .founder span, .founder a {
+        display: block;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
